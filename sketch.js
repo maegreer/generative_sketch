@@ -16,6 +16,7 @@ function draw() {
     fill(300, 300, 300)
     noStroke()
     rect(0, 0, 100, windowHeight)
+    rect(0, 450, windowWidth, 100)
     // function drawBall() {
     //   ctx.beginPath();
     //   ctx.arc(x, y, ballRadius, 0, Math.PI*2);
