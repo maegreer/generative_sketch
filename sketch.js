@@ -12,8 +12,6 @@ function setup() {
 }
   
 
-
-
 function draw() {
     background(175,200,300); 
     fill(300, 300, 300)
@@ -49,9 +47,9 @@ function draw() {
 
     // setInterval(draw2, 1000);
 
-    if (mouseX>400)
+    if (mouseX>700)
     {stroke(126, mouseY/5, 204)
-      strokeWeight(15)}
+      strokeWeight(18)}
    else
     {fill(0, 0, 0)
       strokeWeight(5)} 
@@ -67,4 +65,4 @@ function draw() {
     rect(390, 390, mouseX/2, 100)
     rect(390, 270, mouseX/2, 100)
     rect(270, 390, 100, 100)
-    }
+   }
