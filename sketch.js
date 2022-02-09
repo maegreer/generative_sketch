@@ -11,13 +11,11 @@ function setup() {
     window.alert('Move your mouse around to see the blocks stretch and change color.')
 }
   
-
 function draw() {
     background(175,200,300); 
     fill(300, 300, 300)
     noStroke()
-  
-
+    rect(0, 0, 100, windowHeight)
     // function drawBall() {
     //   ctx.beginPath();
     //   ctx.arc(x, y, ballRadius, 0, Math.PI*2);
@@ -47,12 +45,8 @@ function draw() {
 
     // setInterval(draw2, 1000);
 
-    if (mouseX>700)
-    {stroke(126, mouseY/5, 204)
-      strokeWeight(18)}
-   else
-    {fill(0, 0, 0)
-      strokeWeight(5)} 
+    stroke(126, mouseY/5, 204)
+    strokeWeight(5+mouseX/100)
 
     fill(126, mouseY/4, 204)
     rect(30, 30, 100, 100)
@@ -60,9 +54,17 @@ function draw() {
     rect(150, 30, 100, 100)
     rect(150, 150, 100, mouseY)
     
+    if (x > 200) {
+    fill(126, mouseX/4, 204)
+    rect(270, 270, 100, 100)
+    rect(390, 390, mouseX-100, 100)
+    rect(390, 270, mouseX-100, 100)
+    rect(270, 390, 100, 100)}
+
+    else{
     fill(126, mouseX/4, 204)
     rect(270, 270, 100, 100)
     rect(390, 390, mouseX/2, 100)
     rect(390, 270, mouseX/2, 100)
-    rect(270, 390, 100, 100)
-   }
+    rect(270, 390, 100, 100)}
+  }
